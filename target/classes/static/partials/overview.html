@@ -1,0 +1,36 @@
+<head>
+
+    <title>Registracijos peržiūra</title>
+
+</head>
+<div class="btn-group" style="position: fixed; top: 10px; right: 10px;" role="group" aria-label="...">
+    <button type="button" ng-click="logOff()" class="btn btn-default">Atsijungti</button>
+    <button type="button" ng-click="home()" class="btn btn-default">Pradinis puslapis</button>
+</div>
+<div class="centered" >
+
+    <h2>Registracijos internetu</h2>
+    <table class="table">
+        <thead>
+        <tr>
+            <td>Data</td>
+            <td>Banko skyrius</td>
+            <td>Tema</td>
+            <td colspan="2" align="center">Veiksmai</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="x in products">
+            <td>{{x.date}}</td>
+            <td>{{x.banksection}}</td>
+            <td>{{x.topic}}</td>
+
+            <td><a ng-click="regconf(x.date)">Peržiūrėti</a></td>
+            <td><a ng-click="cancel(x.date)">Atsisakyti</a></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <a ng-click="regi()"> Nauja registracija </a>
+
+</div>

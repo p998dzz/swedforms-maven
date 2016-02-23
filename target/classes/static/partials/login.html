@@ -1,0 +1,18 @@
+<head>
+    <title>Login</title>
+</head>
+
+<div class="text-center" >
+    <form>
+        <div id="loginContainer" class="centered-login">
+            <h1>Prisijungimas</h1>
+            <h2>El. paštas</h2>
+            <input class="form-control login-inputs"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  id="emailField" type="email">
+            <h2>Slaptažodis</h2>
+            <input class="form-control login-inputs" id="passwordField" type="password">
+            <input class="btn btn-default" ng-click="login()" type="submit" value="Jungtis">
+            <button class="btn btn-default" ng-click="register()">Registruotis</button>
+            <p style="color:red; display:none;" id="wrongPassword">Vartotojo vardas arba slaptažodis <br />yra neteisingas</p>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,80 @@
+<head>
+    <title>Registracija</title>
+</head>
+<div class="btn-group" style="position: fixed; top: 10px; right: 10px;" role="group" aria-label="...">
+    <button type="button" ng-click="logOff()" class="btn btn-default">Atsijungti</button>
+    <button type="button" ng-click="home()" class="btn btn-default">Pradinis puslapis</button>
+</div>
+<div class="centered box">
+    <form ng-submit="register()">
+        <table class="registrationTable">
+            <tr>
+                <td colspan="2">
+                    <h2>Registruokitės konsultacijai internetu</h2>
+                </td>
+            </tr>
+            <tr>
+                <td><div >Vardas *</div></td>
+                <td ><input class="field" id="nameField" type="text"></td>
+            </tr>
+            <tr>
+                <td><div >Pavardė *</div></td>
+                <td ><input class = "field" class="field" id="surnameField" type="text"></td>
+            </tr>
+            <tr>
+                <td><div>Telefonas susisiekti *</div></td>
+                <td ><input class = "field" name="phone" type="text" value="+370 " id="phoneField"  />
+            </tr>
+            <tr>
+                <td><div class = "field">El paštas *</div></td>
+                <td><input class="field" id="emailField" type="text"></td>
+            </tr>
+            <tr>
+                <td >Banko skyrius</td>
+                <td >
+                    <select style="max-width:100%;" class = "field" id="unitSelect">
+                        <option value="Nepasirinkta" selected>Nepasirinkta</option>
+                        <option value="Antakalnio45">Antakalnio g. 45</option>
+                        <option value="Ateities91">Ateities g. 91 (PC „Mandarinas")</option>
+                        <option value="Gedimino56">Gedimino pr. 56</option>
+                        <option value="Konstitucijos20A">Konstitucijos pr. 20A, dirba Būsto Centras</option>
+                        <option value="Ozo25">Ozo g. 25 (PPC „Akropolis")</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><div  class = "date">Data</div></td>
+                <td><input style="width: 133px" id="dateField" type="date"/>
+                    <select style="width: 63px" id="timeField">
+                        <option ng-repeat="time in times">{{time}}</option>
+                    </select>
+                </td>
+            </tr>
+            <td >Tema</td>
+            <td>
+                <select class="field" id="topicSelect">
+                    <option value="Nepasirinkta" selected>Nepasirinkta</option>
+                    <option value="Taupymas ir investavimas">Taupymas ir investavimas</option>
+                    <option value="Pensijos ir kaupimas">Pensijos ir kaupimas</option>
+                    <option value="Gyvybės draudimas">Gyvybės draudimas</option>
+                    <option value="Ne gyvybės draudimas">Ne gyvybės draudimas</option>
+                    <option value="Paskolos, lizingas">Paskolos, lizingas</option>
+                    <option value="Kasdieninių finansų valdymas">Kasdienių finansų valdymas</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td><div class="field long">Pastabos, komentarai</div></td>
+                <td ><textarea size="400" style="height:60px; width: 200px;" id="commentField" cols="50" rows="12"></textarea></td>
+            </tr>
+            <tr>
+                <td valign="bottom" align="left" >
+                    <button class="btn btn-default" ng-click="cancel()">Atšaukti</button>
+                </td>
+                <td valign="bottom" align="right">
+                    <input class="btn btn-default" type="submit" value="Siųsti">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>

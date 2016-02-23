@@ -1,0 +1,14 @@
+lt\swedforms\repositories\UserRepository.class
+lt\swedforms\repositories\ContactUsRepository.class
+lt\swedforms\Entities\User.class
+lt\swedforms\Entities\ContactUs.class
+lt\swedforms\transferObjects\NewRegistration.class
+lt\swedforms\transferObjects\User.class
+lt\swedforms\transferObjects\DateObject.class
+lt\swedforms\AppApplication.class
+lt\swedforms\transferObjects\UserData.class
+lt\swedforms\webServices\WebService.class
+lt\swedforms\repositories\RegistrationRepository.class
+lt\swedforms\Entities\Registration.class
+lt\swedforms\transferObjects\ContactUs.class
+lt\swedforms\transferObjects\RegistrationToDelete.class

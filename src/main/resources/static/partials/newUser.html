@@ -1,0 +1,19 @@
+<head>
+    <title>New User</title>
+</head>
+
+<div class="text-center" >
+    <form  ng-submit="ureg()">
+        <div id="SignInContainer" class="centered-login">
+            <h1>Naujas vartotojas</h1>
+            <h2>El. paštas</h2>
+            <input class="form-control login-inputs" id="emailField" type="text">
+            <h2>Naujas slaptažodis</h2>
+            <input class="form-control login-inputs" id="passwordField" type="password">
+            <h2>Pakartoti slaptažodį</h2>
+            <input class="form-control login-inputs" id="repeatpasswordField" type="password">
+            <button class="btn btn-default" ng-click="cancel()">Grįžti</button>
+            <input class="btn btn-default" type="submit" value="Sukurti">
+        </div>
+    </form>
+</div>

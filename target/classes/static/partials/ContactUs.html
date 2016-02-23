@@ -1,0 +1,79 @@
+<head>
+    <title>Parašykite mums</title>
+</head>
+<div class="btn-group" style="position: fixed; top: 10px; right: 10px;" role="group" aria-label="...">
+    <button type="button" ng-click="logOff()" class="btn btn-default">Atsijungti</button>
+    <button type="button" ng-click="home()" class="btn btn-default">Pradinis puslapis</button>
+</div>
+<div class="centered box" action="action_page.php">
+    <form id="form1">
+        <table>
+            <tr>
+                <td colspan="2">
+                    <h2>Parašykite mums</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>Tema *</td>
+                <td>
+                    <select style="width:200px;" id="topicSelect">
+                        <option value="Nepasirinkta" selected>Nepasirinkta</option>
+                        <option value="Taupymas ir investavimas">Taupymas ir investavimas</option>
+                        <option value="Pensijos ir kaupimas">Pensijos ir kaupimas</option>
+                        <option value="Gyvybės draudimas">Gyvybės draudimas</option>
+                        <option value="Ne gyvybės draudimas">Ne gyvybės draudimas</option>
+                        <option value="Paskolos, lizingas">Paskolos, lizingas</option>
+                        <option value="Kasdieninių finansų valdymas">Kasdienių finansų valdymas</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Žinutės tekstas *</td>
+                <td><textarea id="messageField" class="inputs" size="400" style="height:60px;" cols="50" rows="12" ></textarea></td>
+            </tr>
+            <tr>
+                <td name="firstname">Vardas *</td>
+                <td><input type="text" class="inputs" id="nameField"></td>
+            </tr>
+            <tr>
+                <td name="lastname">Pavardė</td>
+                <td><input type="text" class="inputs" id="lastnameField"></td>
+            </tr>
+            <tr>
+                <td name="phone">Telefonas *</td>
+                <td><input name="phone" class="inputs" type="text" value="+370" id="phoneField"></td>
+            </tr>
+            <tr>
+                <td name="email">El. Paštas *</td>
+                <td><input type="text" class="inputs" id="emailField"></td>
+            </tr>
+            <tr>
+                <td>Kaip pageidaujate gauti atsakymą</td>
+                <td>
+                    <form>
+                        <input type="radio" name="answer" value="phone" checked id="responcephone"> telefonu<br>
+                        <input type="radio" name="answer" value="email" id="responceemail"> el. paštu<br>
+                        <input type="radio" name="answer" value="email and phone" id="responceboth"> el. paštu and
+                        telefonu
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="inputs">
+                    Į pateiktus klausimus atsakome darbo dienomis 8-20 val., šeštadieniais 9-16 valandomis.Jeigu jums
+                    reikalinga skubi informacija, laukiame jūsų skambučių tel. 1884 (privatiems klientams)
+                    bei 1633 (verslo klientams). Iš užsienio skambinkite tel. +370 5 268 444(privatiems klientams)
+                    bei +370 5 268 4422 (verslo klientams).
+                </td>
+            </tr>
+            <tr>
+                <td valign="bottom" align="left">
+                    <button class="btn btn-default" ng-click="cancel()">Atšaukti</button>
+                </td>
+                <td valign="bottom" valign="bottom" align="right">
+                    <input class="btn btn-default" ng-click="contact()" type="submit" value="Siųsti" >
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
